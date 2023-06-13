@@ -1,0 +1,4 @@
+sim/avst.o
+sim/avst.vpi
+sim/avst.vvp
+sim/avst_adder.vcd

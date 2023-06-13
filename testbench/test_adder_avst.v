@@ -55,12 +55,10 @@ module test_adder;
 		    end_in <= 1;
 		    valid_in <= 1;
 		 end
-		 @(negedge clk);
+		 @(posedge clk);
 		 #5;
 		 end_in <= 0;
 		 valid_in <= 0;
-		 @(posedge clk);
-		 #5;
 		 retval = $avst_item_done(0);
 	      end // case: 0
 	      default:  ; // $finish;
